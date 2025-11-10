@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack serve --config webpack.config.js --open"
+    "start": "webpack "
   },
   "dependencies": {
     "react": "19.2.0",
