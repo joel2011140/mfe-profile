@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack "
+    "start": "webpack serve --config webpack.config.js --open"
   },
   "dependencies": {
     "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "webpack": "5.102.1",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
     "@babel/core": "7.22.0",
     "@babel/preset-env": "7.22.0",
     "@babel/preset-react": "7.22.0",
@@ -25,8 +26,8 @@
     "tailwindcss": "3.4.12",
     "ts-loader": "9.4.4",
     "typescript": "5.3.3",
+    "webpack": "5.102.1",
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "4.15.1"
-  },
-  "devDependencies": {}
+  }
 }

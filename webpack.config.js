@@ -3,17 +3,15 @@ const { ModuleFederationPlugin } = require("webpack").container;
 const deps = require("./package.json").dependencies;
 const path = require("path");
 
-const publicUrl = process.env.PUBLIC_URL || "http://localhost:3001/";
-
 module.exports = {
   entry: "./src/index.ts",
-  mode: process.env.NODE_ENV || "development",
+  mode: "development",
   devServer: {
     port: 3001,
     historyApiFallback: true,
   },
   output: {
-    publicPath: publicUrl,
+    publicPath: "http://localhost:3001/",
     clean: true,
   },
   resolve: {
